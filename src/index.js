@@ -1,13 +1,20 @@
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import Company from './Company';
+
+import Home from './containers/Home';
+
 import reportWebVitals from './reportWebVitals';
+
+import './styles/index.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Company />
+    <BrowserRouter>
+      <Switch>
+        <Route path='/' component={ Home } exact />
+      </Switch>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
