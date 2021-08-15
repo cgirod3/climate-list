@@ -17,7 +17,7 @@ const CompanyName = (props) => {
         rel="noreferrer"
         target='_blank'
       >
-        { name }
+        <span>{ name }</span>
       </a>
     </td>
   );
