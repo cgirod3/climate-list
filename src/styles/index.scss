@@ -10,10 +10,15 @@ body {
   color: $colorText;
   font-family: Apercu;
   height: 100%;
+
   margin: 0;
   padding: 50px 20px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  height: 100%;
 }
 
 code {
