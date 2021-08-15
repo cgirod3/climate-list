@@ -4,52 +4,23 @@
 
 .Company-table {
   align-items: left;
-  color: white;
   display: flex;
   flex-direction: column;
   font-size: calc(5px + 2vmin);
   justify-content: left;
-  margin: auto;
-  min-height: 50vh;
+  margin: 0 40px;
   table-layout: fixed;
   text-align: left;
   vertical-align: top;
-  width: 65%;
 }
 
-.table-header-row {
-  border-bottom: thin solid #dddddd;
-  border-left: 10px solid #dddddd;
+.Company-table-header {
+  border-bottom: thin solid black;
+  border-left: 10px solid black;
   overflow:hidden;
   text-align: center;
-}
-
-.table-row {
-  border-bottom: thin solid #dddddd;
-  border-left: 10px solid #dddddd;
-  overflow:hidden;
 }
 
 table, th, td {
-  border: 1px solid white;
-}
-
-.table-company-name {
-  text-align: center;
-  width: 15%;
-}
-
-.table-company-logo {
-  text-align: center;
-  width: 10%;
-}
-
-.table-image {
-  font-size: calc(2px + 2vmin);
-  width: 60%;
-}
-
-.table-company-summary {
-  font-size: calc(2px + 2vmin);
-  width: 75%;
+  border: 1px solid black;
 }

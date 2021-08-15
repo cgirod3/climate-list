@@ -1,0 +1,29 @@
+.CompanyRow {
+  border-bottom: thin solid black;
+  border-left: 10px solid black;
+  overflow:hidden;
+}
+
+.CompanyRow-name {
+  text-align: center;
+  width: 15%;
+}
+
+.CompanyRow-logo {
+  text-align: center;
+  width: 10%;
+}
+
+.CompanyRow-logo-img {
+  font-size: calc(2px + 2vmin);
+  width: 60%;
+}
+
+.CompanyRow-summary {
+  font-size: calc(2px + 2vmin);
+  width: 75%;
+}
+
+td {
+  border: 1px solid black;
+}

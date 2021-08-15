@@ -1,10 +1,14 @@
 import React from 'react';
 
-import Company from '../components/Company';
+import Body from '../components/Body';
+import Header from '../components/Header';
 
 const Home = (props) => {
   return (
-    <Company />
+    <div className='Home'>
+      <Header />
+      <Body />
+    </div>
   );
 };
 

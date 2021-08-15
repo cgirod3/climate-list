@@ -1,35 +1,27 @@
 import companyData from '../data/companies.json'
 
+import CompanyRow from './CompanyRow';
+
 import '../styles/components/Company.css';
 
 const Company = () => {
 
-  const options = companyData["CompanyList"].map(company => {
-    const { logo: logoName, name, summary } = company;
-    const logo = require(`../images/${logoName}`).default;
-
-    return (
-      <tr className="table-row">
-        <td className="table-company-name">{ name }</td>
-        <td className="table-company-logo">
-          <img className = "table-image"
-            src={ logo }
-            alt='cannot display'>
-          </img>
-        </td>
-        <td className="table-company-summary">{ summary }</td>
-      </tr>
-    );
-  });
+  const options = companyData["CompanyList"].map(company => (
+    <CompanyRow
+      logo={ company.logo }
+      name={ company.name }
+      summary={ company.summary }
+    />
+  ));
 
   return (
     <div className="Company">
       <table className="Company-table">
         <tbody>
-          <tr className="table-header-row">
-            <th className="table-company-name">Name</th>
-            <th className="table-company-logo">Logo</th>
-            <th className="table-company-summary">Summary</th>
+          <tr className="Company-table-header">
+            <th>Name</th>
+            <th>Logo</th>
+            <th>Summary</th>
           </tr>
           { options }
         </tbody>
