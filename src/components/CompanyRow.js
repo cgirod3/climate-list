@@ -19,7 +19,7 @@ const CompanyRow = (props) => {
   useEffect(() => {
     const logoFile = require(`../images/${logoName}`).default;
     setLogo(logoFile);
-  });
+  }, [logoName]);
 
   return (
     <tr className="CompanyRow">
