@@ -1,10 +1,13 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
+import CompanyName from './CompanyName';
+
 import '../styles/components/CompanyRow.css';
 
 const CompanyRow = (props) => {
   const {
+    link,
     logo: logoName,
     logoAlt,
     name,
@@ -15,7 +18,7 @@ const CompanyRow = (props) => {
 
   return (
     <tr className="CompanyRow">
-      <td className="CompanyRow-name">{ name }</td>
+      <CompanyName name={ name } link={ link } />
       <td className="CompanyRow-logo">
         <img className = "CompanyRow-logo-img"
           src={ logo }
@@ -28,10 +31,12 @@ const CompanyRow = (props) => {
 };
 
 CompanyRow.propTypes = {
+  link: PropTypes.string.isRequired,
   logo: PropTypes.string.isRequired,
   logoAlt: PropTypes.string,
   name: PropTypes.string.isRequired,
-  summary: PropTypes.string.isRequired
+  summary: PropTypes.string.isRequired,
+
 };
 
 CompanyRow.defaultProps = {
