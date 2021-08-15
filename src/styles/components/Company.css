@@ -8,19 +8,22 @@
   flex-direction: column;
   font-size: calc(5px + 2vmin);
   justify-content: left;
-  margin: 0 40px;
+  margin: auto;
   table-layout: fixed;
   text-align: left;
   vertical-align: top;
+  width: 75%;
 }
 
 .Company-table-header {
-  border-bottom: thin solid black;
-  border-left: 10px solid black;
   overflow:hidden;
   text-align: center;
 }
 
-table, th, td {
-  border: 1px solid black;
+table {
+  border-collapse: collapse;
+}
+
+td, th {
+  border-bottom: 2px solid gray;
 }

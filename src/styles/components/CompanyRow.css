@@ -1,6 +1,6 @@
 .CompanyRow {
-  border-bottom: thin solid black;
-  border-left: 10px solid black;
+  /*border-bottom: thin solid black;
+  border-left: 10px solid black;*/
   overflow:hidden;
 }
 
@@ -22,8 +22,4 @@
 .CompanyRow-summary {
   font-size: calc(2px + 2vmin);
   width: 75%;
-}
-
-td {
-  border: 1px solid black;
 }

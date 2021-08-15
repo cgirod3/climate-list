@@ -6,7 +6,7 @@ import '../styles/components/Company.css';
 
 const Company = () => {
 
-  const options = companyData["CompanyList"].map(company => (
+  const CompanyRows = companyData["CompanyList"].map(company => (
     <CompanyRow
       logo={ company.logo }
       name={ company.name }
@@ -23,7 +23,7 @@ const Company = () => {
             <th>Logo</th>
             <th>Summary</th>
           </tr>
-          { options }
+          { CompanyRows }
         </tbody>
       </table>
     </div>
