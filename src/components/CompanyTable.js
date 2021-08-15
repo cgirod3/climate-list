@@ -20,9 +20,9 @@ const CompanyTable = () => {
     <table className="CompanyTable">
       <tbody>
         <tr className="CompanyTable-header">
-          <th>Name</th>
-          <th>Logo</th>
-          <th>Summary</th>
+          <th>NAME</th>
+          <th>LOGO</th>
+          <th>SUMMARY</th>
         </tr>
         { CompanyRows }
       </tbody>
