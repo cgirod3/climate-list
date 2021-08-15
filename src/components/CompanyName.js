@@ -11,7 +11,12 @@ const CompanyName = (props) => {
 
   return (
     <td className="CompanyName">
-      <a className='CompanyName-link' href={ link } target='_blank'>
+      <a
+        className='CompanyName-link'
+        href={ link }
+        rel="noreferrer"
+        target='_blank'
+      >
         { name }
       </a>
     </td>
