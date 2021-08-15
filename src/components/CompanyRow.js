@@ -3,7 +3,7 @@ import React from 'react';
 
 import CompanyName from './CompanyName';
 
-import '../styles/components/CompanyRow.css';
+import '../styles/components/CompanyRow.scss';
 
 const CompanyRow = (props) => {
   const {

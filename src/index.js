@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom';
 import Home from './containers/Home';
 import reportWebVitals from './reportWebVitals';
 
-import './styles/index.css';
+import './styles/index.scss';
 
 ReactDOM.render(
   <React.StrictMode>

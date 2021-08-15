@@ -2,7 +2,7 @@ import companyData from '../data/companies.json'
 
 import CompanyRow from './CompanyRow';
 
-import '../styles/components/CompanyTable.css';
+import '../styles/components/CompanyTable.scss';
 
 const CompanyTable = () => {
 

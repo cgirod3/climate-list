@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import '../styles/components/CompanyName.css';
+import '../styles/components/CompanyName.scss';
 
 const CompanyName = (props) => {
   const {
@@ -17,7 +17,7 @@ const CompanyName = (props) => {
         rel="noreferrer"
         target='_blank'
       >
-        { name }
+        <span>{ name }</span>
       </a>
     </td>
   );

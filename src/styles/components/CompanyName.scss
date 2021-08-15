@@ -1,13 +1,19 @@
+@import '../variables';
+
 .CompanyName {
   text-align: center;
   width: 15%;
 }
 
 .CompanyName-link {
-  color: blue;
+  color: $colorLink;
   text-decoration: none;
 }
 
 .CompanyName-link:visited {
-  color: blue;
+  color: $colorLink;
+}
+
+.CompanyName-link:hover {
+  color: $colorLinkHover;
 }
