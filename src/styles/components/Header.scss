@@ -1,7 +1,26 @@
 .Header {
-  margin-bottom: 40px;
+  align-items: flex-end;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  width: 100%;
 }
 
 .Header-quote {
+  font-size: large;
+  font-weight: bold;
+  text-align: right;
+  width: 55%;
+}
+
+.Header-quote-text {
   font-style: italic;
+  line-height: 1.5em;
+  margin-bottom: 10px;
+}
+
+.Header-text {
+  margin-bottom: 0;
+  width: 40%;
 }
