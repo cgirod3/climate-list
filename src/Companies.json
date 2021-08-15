@@ -1,0 +1,18 @@
+{
+  "CompanyList": [
+    {
+      "name": "Form Energy",
+      "category": ["Clean Electrification", "Long Form Batteries"],
+      "website": "https://formenergy.com/",
+      "summary": "Form energy is making long duration batteries that last on the order of days, rather than hours. This allows renewables to power the grid even when the sun isn't shining and the wind isn't blowing",
+      "logo": "form.jpeg"
+    },
+    {
+      "name": "Ekotrope",
+      "category": ["Energy Efficiency"],
+      "website": "https://www.ekotrope.com/",
+      "summary": "Ekotrope provides software that helps guide builders estimate how different materials effects energy use over time",
+      "logo": "ekotrope.png"
+    }
+  ]
+}
