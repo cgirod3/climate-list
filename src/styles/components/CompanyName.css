@@ -2,3 +2,12 @@
   text-align: center;
   width: 15%;
 }
+
+.CompanyName-link {
+  color: blue;
+  text-decoration: none;
+}
+
+.CompanyName-link:visited {
+  color: blue;
+}

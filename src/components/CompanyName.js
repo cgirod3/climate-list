@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-// import '../styles/components/CompanyName.css';
+import '../styles/components/CompanyName.css';
 
 const CompanyName = (props) => {
   const {
