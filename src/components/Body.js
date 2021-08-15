@@ -1,11 +1,11 @@
 import React from 'react';
 
-import Company from './Company';
+import CompanyTable from './CompanyTable';
 
 const Body = () => {
   return (
     <div className='Body'>
-      <Company />
+      <CompanyTable />
     </div>
   );
 };
