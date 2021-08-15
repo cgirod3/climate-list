@@ -3,16 +3,51 @@
     {
       "name": "Form Energy",
       "category": ["Clean Electrification", "Long Form Batteries"],
-      "website": "https://formenergy.com/",
-      "summary": "Form energy is making long duration batteries that last on the order of days, rather than hours. This allows renewables to power the grid even when the sun isn't shining and the wind isn't blowing",
+      "website": "https://formenergy.com/careers/",
+      "summary": "Form Energy is making long duration batteries that last on the order of days, rather than hours. This allows renewables to power the grid even when the sun isn't shining and the wind isn't blowing",
       "logo": "form.jpeg"
     },
     {
       "name": "Ekotrope",
       "category": ["Energy Efficiency"],
-      "website": "https://www.ekotrope.com/",
+      "website": "https://www.ekotrope.com/careers",
       "summary": "Ekotrope provides software that helps guide builders estimate how different materials effects energy use over time",
       "logo": "ekotrope.png"
+    },
+    {
+      "name": "Watershed",
+      "category": ["Emissions Measurement"],
+      "website": "https://watershedclimate.com/jobs",
+      "summary": "Watershed leverages software to measure their carbon footprint accurately, and builds plans to eliminate those emissions",
+      "logo": "watershed.jpg"
+    },
+    {
+      "name": "Bluewave Solar",
+      "category": ["Solar", "Software"],
+      "website": "https://bluewave.energy/about/our-team",
+      "summary": "Bluewave Solar is community solar powered by software. Get solar without installing it.",
+      "logo": "bluewave.jpg"
+    },
+    {
+      "name": "Commonwealth Fusion",
+      "category": ["Nuclear Energy"],
+      "website": "https://cfs.energy/careers",
+      "summary": "Small-scale fusion for cheap non-emitting energy.",
+      "logo": "commonwealth.jpg"
+    },
+    {
+      "name": "Patch",
+      "category": ["Carbon Offsets", "Software"],
+      "website": "https://www.patch.io/careers",
+      "summary": "Carbon offset APIs for consumer and enterprise use. Aims to balance offsets with a combination of research-heavy and immediate results offset.",
+      "logo": "patch.jpg"
+    },
+    {
+      "name": "Charm Industrial",
+      "category": ["Carbon Offsets", "Hardware"],
+      "website": "https://boards.greenhouse.io/charmindustrial/jobs/4308380003?gh_src=2d6481ed3us",
+      "summary": "Charm converts waste biomass into bio-oil, which is then injected deep underground, permanently sequestering the carbon.",
+      "logo": "charm.png"
     }
   ]
 }
