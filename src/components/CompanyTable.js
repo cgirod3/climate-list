@@ -2,7 +2,7 @@ import companyData from '../data/companies.json'
 
 import CompanyRow from './CompanyRow';
 
-import '../styles/components/CompanyTable.css';
+import '../styles/components/CompanyTable.scss';
 
 const CompanyTable = () => {
 
@@ -20,9 +20,9 @@ const CompanyTable = () => {
     <table className="CompanyTable">
       <tbody>
         <tr className="CompanyTable-header">
-          <th>Name</th>
-          <th>Logo</th>
-          <th>Summary</th>
+          <th>NAME</th>
+          <th>LOGO</th>
+          <th>SUMMARY</th>
         </tr>
         { CompanyRows }
       </tbody>

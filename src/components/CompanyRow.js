@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import CompanyName from './CompanyName';
 
-import '../styles/components/CompanyRow.css';
+import '../styles/components/CompanyRow.scss';
 
 const CompanyRow = (props) => {
   const {
@@ -14,7 +14,12 @@ const CompanyRow = (props) => {
     summary
   } = props;
 
-  const logo = require(`../images/${logoName}`).default;
+  const [logo, setLogo] = useState(null);
+
+  useEffect(() => {
+    const logoFile = require(`../images/${logoName}`).default;
+    setLogo(logoFile);
+  }, [logoName]);
 
   return (
     <tr className="CompanyRow">

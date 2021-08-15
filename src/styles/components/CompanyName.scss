@@ -1,0 +1,21 @@
+@import '../variables';
+
+.CompanyName {
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  width: 15%;
+}
+
+.CompanyName-link {
+  color: $colorTextLink;
+  text-decoration: none;
+}
+
+.CompanyName-link:visited {
+  color: $colorTextLink;
+}
+
+.CompanyName-link:hover {
+  color: $colorTextLinkHover;
+}

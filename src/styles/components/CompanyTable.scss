@@ -1,3 +1,5 @@
+@import '../variables';
+
 .CompanyTable {
   border-collapse: collapse;
   display: flex;
@@ -16,11 +18,11 @@
 }
 
 td {
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid $colorText;
   padding: 15px;
 }
 
 th {
-  border-bottom: 2px solid gray;
+  border-bottom: 2px solid $colorText;
   padding: 15px;
 }

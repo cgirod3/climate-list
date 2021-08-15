@@ -1,0 +1,27 @@
+@import './variables';
+
+@font-face {
+  font-family: Apercu;
+  src: url('./fonts/Apercu/apercu_regular.ttf');
+}
+
+body {
+  background-image: linear-gradient(to bottom right, $colorBgHeavy, $colorBgLight);
+  color: $colorText;
+  font-family: Apercu;
+  height: 100%;
+
+  margin: 0;
+  padding: 50px 20px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  height: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

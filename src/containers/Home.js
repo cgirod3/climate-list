@@ -3,7 +3,7 @@ import React from 'react';
 import Body from '../components/Body';
 import Header from '../components/Header';
 
-import '../styles/containers/Home.css';
+import '../styles/containers/Home.scss';
 
 const Home = (props) => {
   return (
