@@ -3,6 +3,8 @@ import React from 'react';
 import Body from '../components/Body';
 import Header from '../components/Header';
 
+import '../styles/containers/Home.css';
+
 const Home = (props) => {
   return (
     <div className='Home'>

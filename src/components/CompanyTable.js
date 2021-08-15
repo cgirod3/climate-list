@@ -6,8 +6,9 @@ import '../styles/components/CompanyTable.css';
 
 const CompanyTable = () => {
 
-  const CompanyRows = companyData["CompanyList"].map(company => (
+  const CompanyRows = companyData["CompanyList"].map((company, i) => (
     <CompanyRow
+      key={ i }
       link={ company.website }
       logo={ company.logo }
       name={ company.name }
