@@ -4,10 +4,7 @@
   border-collapse: collapse;
   display: flex;
   flex-direction: column;
-  font-size: calc(5px + 2vmin);
   justify-content: left;
-  margin: auto;
-  table-layout: fixed;
   text-align: left;
   vertical-align: top;
 }
@@ -19,10 +16,10 @@
 
 td {
   border-bottom: 1px solid $colorText;
-  padding: 15px;
+  padding: 20px;
 }
 
 th {
   border-bottom: 2px solid $colorText;
-  padding: 15px;
+  padding: 20px;
 }

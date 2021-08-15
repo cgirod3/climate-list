@@ -9,6 +9,7 @@
 
 .CompanyName-link {
   color: $colorTextLink;
+  position: relative;
   text-decoration: none;
 }
 
@@ -18,4 +19,23 @@
 
 .CompanyName-link:hover {
   color: $colorTextLinkHover;
+}
+
+.CompanyName-link::before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+  width: 0;
+  height: 3px;
+  background-color: $colorTextLinkHover;
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .CompanyName-link:hover::before{
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
 }
