@@ -11,7 +11,8 @@ const CompanyRow = (props) => {
     logo: logoName,
     logoAlt,
     name,
-    summary
+    summary,
+    apply_link
   } = props;
 
   const [logo, setLogo] = useState(null);
@@ -31,6 +32,7 @@ const CompanyRow = (props) => {
         />
       </td>
       <td className="CompanyRow-summary">{ summary }</td>
+      <CompanyName name={ name } link={ apply_link } />
     </tr>
   );
 };
@@ -41,6 +43,7 @@ CompanyRow.propTypes = {
   logoAlt: PropTypes.string,
   name: PropTypes.string.isRequired,
   summary: PropTypes.string.isRequired,
+  apply_link: PropTypes.string.isRequired,
 
 };
 
