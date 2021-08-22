@@ -9,10 +9,8 @@ const useWindowSize = () => {
   });
 
   useEffect(() => {
-    console.log('\n\n\nusewindowsize');
     // Handler to call on window resize
     const handleResize = () => {
-      console.log(window.innerWidth, window.innerHeight);
       // Set window width/height to state
       setWindowSize({
         width: window.innerWidth,

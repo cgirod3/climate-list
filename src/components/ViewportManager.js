@@ -11,8 +11,6 @@ const ViewportManager = (props) => {
   const { height, width } = useWindowSize();
 
   useEffect(() => {
-    console.log('\n\n\nviewport manager');
-    console.log(height, width);
     updateViewport({ height, width });
   }, [height, updateViewport, width]);
 
