@@ -1,5 +1,6 @@
-import companyData from '../data/companies.json'
+import React from 'react';
 
+import companyData from '../data/companies.json'
 import CompanyRow from './CompanyRow';
 
 import '../styles/components/CompanyTable.scss';

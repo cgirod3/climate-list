@@ -54,7 +54,7 @@
       "name": "Patch",
       "category": ["Carbon Offsets", "Software"],
       "links": {
-        "apply": "https://www.patch.io",
+        "main": "https://www.patch.io",
         "apply": "https://www.patch.io/careers"
       },
       "summary": "Carbon offset APIs for consumer and enterprise use. Aims to balance offsets with a combination of research-heavy and immediate results offset.",
@@ -64,7 +64,7 @@
       "name": "Charm Industrial",
       "category": ["Carbon Offsets", "Hardware"],
       "links": {
-        "apply": "https://charmindustrial.com/",
+        "main": "https://charmindustrial.com/",
         "apply": "https://boards.greenhouse.io/charmindustrial/jobs/4308380003?gh_src=2d6481ed3us"
       },
       "summary": "Charm converts waste biomass into bio-oil, which is then injected deep underground, permanently sequestering the carbon.",
