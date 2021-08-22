@@ -1,6 +1,10 @@
-import { createStore } from 'redux';
+import { combineReducers, createStore } from 'redux';
 
-const fakeReducer = (state = {}) => state;
+import viewportReducer from './reducers/viewport';
+
+const reducers = {
+  viewport: viewportReducer
+};
 
 const initStore = () => {
   const enhancer = (
@@ -14,7 +18,7 @@ const initStore = () => {
       'https://github.com/zalmoxisus/redux-devtools-extension#installation')
   }
 
-  createStore(fakeReducer, {}, enhancer);
+  return createStore(combineReducers(reducers), {}, enhancer);
 };
 
 export default initStore;
