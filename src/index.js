@@ -6,7 +6,6 @@ import ReactDOM from 'react-dom';
 import createStore from './store';
 import Home from './containers/Home';
 import reportWebVitals from './reportWebVitals';
-import ViewportManager from './components/ViewportManager';
 
 import './styles/index.scss';
 
@@ -16,11 +15,9 @@ ReactDOM.render(
   <React.StrictMode>
     <Provider store={ store }>
       <BrowserRouter>
-        <ViewportManager>
-          <Switch>
-            <Route path='/' component={ Home } exact />
-          </Switch>
-        </ViewportManager>
+        <Switch>
+          <Route path='/' component={ Home } exact />
+        </Switch>
       </BrowserRouter>
     </Provider>
   </React.StrictMode>,
