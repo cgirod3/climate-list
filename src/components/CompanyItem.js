@@ -3,9 +3,9 @@ import React, { useEffect, useState } from 'react';
 
 import CompanyName from './CompanyName';
 
-import '../styles/components/CompanyRow.scss';
+import '../styles/components/CompanyItem.scss';
 
-const CompanyRow = (props) => {
+const CompanyItem = (props) => {
   const {
     link,
     logo: logoName,
@@ -23,21 +23,21 @@ const CompanyRow = (props) => {
   }, [logoName]);
 
   return (
-    <tr className="CompanyRow">
-      <td><CompanyName name={ name } link={ link } /></td>
-      <td className="CompanyRow-logo">
-        <img className = "CompanyRow-logo-img"
+    <div className='CompanyItem'>
+      <div className='CompanyItem-head'>
+        <CompanyName name={ name } link={ link } />
+        <img className = 'CompanyItem-logo-img'
           src={ logo }
           alt={ logoAlt }
         />
-      </td>
-      <td className="CompanyRow-summary">{ summary }</td>
-      <td><CompanyName name={ name } link={ apply_link } /></td>
-    </tr>
+      </div>
+      <span className='CompanyItem-summary'>{ summary }</span>
+      <CompanyName name={ name } link={ apply_link } />
+    </div>
   );
 };
 
-CompanyRow.propTypes = {
+CompanyItem.propTypes = {
   link: PropTypes.string.isRequired,
   logo: PropTypes.string.isRequired,
   logoAlt: PropTypes.string,
@@ -47,8 +47,8 @@ CompanyRow.propTypes = {
 
 };
 
-CompanyRow.defaultProps = {
+CompanyItem.defaultProps = {
   logoAlt: 'Cannot Display'
 };
 
-export default CompanyRow;
+export default CompanyItem;
