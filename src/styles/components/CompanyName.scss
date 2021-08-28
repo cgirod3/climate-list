@@ -1,27 +1,20 @@
 @import '../variables';
 
 .CompanyName {
-  font-weight: bold;
-  font-style: italic;
-  text-align: center;
-  width: 15%;
-}
-
-.CompanyName-link {
   color: $colorTextLink;
   position: relative;
   text-decoration: none;
 }
 
-.CompanyName-link:visited {
+.CompanyName:visited {
   color: $colorTextLink;
 }
 
-.CompanyName-link:hover {
+.CompanyName:hover {
   color: $colorTextLinkHover;
 }
 
-.CompanyName-link::before {
+.CompanyName::before {
   content: '';
   position: absolute;
   bottom: -5px;
@@ -33,9 +26,16 @@
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .CompanyName-link:hover::before{
+  .CompanyName:hover::before{
     left: 0;
     right: auto;
     width: 100%;
   }
+}
+
+.CompanyName-text {
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  width: 15%;
 }

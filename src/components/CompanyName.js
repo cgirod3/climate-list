@@ -10,16 +10,14 @@ const CompanyName = (props) => {
   } = props;
 
   return (
-    <td className="CompanyName">
-      <a
-        className='CompanyName-link'
-        href={ link }
-        rel="noreferrer"
-        target='_blank'
-      >
-        <span>{ name }</span>
-      </a>
-    </td>
+    <a
+      className='CompanyName'
+      href={ link }
+      rel="noreferrer"
+      target='_blank'
+    >
+      <span className='CompanyName-text'>{ name }</span>
+    </a>
   );
 };
 

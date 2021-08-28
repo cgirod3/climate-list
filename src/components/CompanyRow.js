@@ -24,7 +24,7 @@ const CompanyRow = (props) => {
 
   return (
     <tr className="CompanyRow">
-      <CompanyName name={ name } link={ link } />
+      <td><CompanyName name={ name } link={ link } /></td>
       <td className="CompanyRow-logo">
         <img className = "CompanyRow-logo-img"
           src={ logo }
@@ -32,7 +32,7 @@ const CompanyRow = (props) => {
         />
       </td>
       <td className="CompanyRow-summary">{ summary }</td>
-      <CompanyName name={ name } link={ apply_link } />
+      <td><CompanyName name={ name } link={ apply_link } /></td>
     </tr>
   );
 };

@@ -31,7 +31,7 @@ const CompanyItem = (props) => {
           alt={ logoAlt }
         />
       </div>
-      <td className='CompanyItem-summary'>{ summary }</td>
+      <span className='CompanyItem-summary'>{ summary }</span>
       <CompanyName name={ name } link={ apply_link } />
     </div>
   );
