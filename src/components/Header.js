@@ -6,30 +6,30 @@ import useDevice from '../hooks/useDevice';
 import '../styles/components/Header.scss';
 
 const Header = () => {
-  const isMobile = useDevice() === DEVICES.MOBILE;
+  const isDesktop = useDevice() === DEVICES.DESKTOP;
 
   return (
     <div
       className='Header'
       style={{
-        ...(isMobile ?
-          { alignItems: 'center', flexDirection: 'column', marginBottom: '30px' } :
-          { marginBottom: '60px' }
+        ...(isDesktop ?
+          { marginBottom: '60px' } :
+          { alignItems: 'center', flexDirection: 'column', marginBottom: '30px' }
         )
       }}
     >
       <h1
         className='Header-text'
         style={{
-          ...(isMobile ?
-            { margin: 0 } :
-            { marginBottom: 0, 'width': '40%' }
+          ...(isDesktop ?
+            { marginBottom: 0, 'width': '40%' } :
+            { margin: 0 }
           )
         }}
       >
         The GreenTech List
       </h1>
-      { !isMobile &&
+      { isDesktop &&
         <div className='Header-quote'>
           <div className='Header-quote-text'>
             "Your work is going to fill a large part of your life,

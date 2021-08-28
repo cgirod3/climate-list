@@ -7,14 +7,14 @@ import useDevice from '../hooks/useDevice';
 import '../styles/components/Body.scss';
 
 const Body = () => {
-  const isMobile = useDevice() === DEVICES.MOBILE;
+  const isDesktop = useDevice() === DEVICES.DESKTOP;
 
   return (
     <div className='Body'>
       <span
         className='Body-goal'
         style={{
-          ...(!isMobile && {
+          ...(isDesktop && {
             width: '70%'
           })
         }}

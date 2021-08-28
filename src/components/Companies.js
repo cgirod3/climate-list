@@ -8,7 +8,7 @@ import useDevice from '../hooks/useDevice';
 const Companies = () => {
   const device = useDevice();
 
-  const CompanyComponent = device === DEVICES.MOBILE ? CompanyList : CompanyTable;
+  const CompanyComponent = device === DEVICES.DESKTOP ? CompanyTable : CompanyList;
 
   return (
     <CompanyComponent />
