@@ -14,11 +14,7 @@ const Home = (props) => {
     <div
       className='Home'
       style={{
-        padding: isMobile ? '30px 20px 20px' : '50px 20px',
-        ...(!isMobile && {
-          margin: 'auto',
-          width: '75%'
-        })
+        padding: isMobile ? '30px 20px 20px' : '5% 15%'
       }}
     >
       <Header />
