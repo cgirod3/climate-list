@@ -12,7 +12,7 @@ const CompanyItem = (props) => {
     logoAlt,
     name,
     summary,
-    apply_link
+    applyLink
   } = props;
 
   const [logo, setLogo] = useState(null);
@@ -25,25 +25,25 @@ const CompanyItem = (props) => {
   return (
     <div className='CompanyItem'>
       <div className='CompanyItem-head'>
-        <CompanyName name={ name } link={ link } />
+        <CompanyName link={ link } text={ name } />
         <img className = 'CompanyItem-logo-img'
           src={ logo }
           alt={ logoAlt }
         />
       </div>
       <span className='CompanyItem-summary'>{ summary }</span>
-      <CompanyName name={ name } link={ apply_link } />
+      <CompanyName link={ applyLink } text='Careers' />
     </div>
   );
 };
 
 CompanyItem.propTypes = {
+  applyLink: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
   logo: PropTypes.string.isRequired,
   logoAlt: PropTypes.string,
   name: PropTypes.string.isRequired,
-  summary: PropTypes.string.isRequired,
-  apply_link: PropTypes.string.isRequired,
+  summary: PropTypes.string.isRequired
 
 };
 
