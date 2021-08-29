@@ -9,12 +9,12 @@ const CompanyTable = () => {
 
   const CompanyRows = companyData["CompanyList"].map((company, i) => (
     <CompanyRow
+      applyLink={ company.links.apply }
       key={ i }
       link={ company.links.main }
       logo={ company.logo }
       name={ company.name }
       summary={ company.summary }
-      apply_link={ company.links.apply }
     />
   ));
 

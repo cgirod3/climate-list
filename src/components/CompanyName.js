@@ -6,7 +6,7 @@ import '../styles/components/CompanyName.scss';
 const CompanyName = (props) => {
   const {
     link,
-    name
+    text
   } = props;
 
   return (
@@ -16,15 +16,14 @@ const CompanyName = (props) => {
       rel="noreferrer"
       target='_blank'
     >
-      <span className='CompanyName-text'>{ name }</span>
+      <span className='CompanyName-text'>{ text }</span>
     </a>
   );
 };
 
 CompanyName.propTypes = {
   link: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired
-
+  text: PropTypes.string.isRequired
 };
 
 export default CompanyName;

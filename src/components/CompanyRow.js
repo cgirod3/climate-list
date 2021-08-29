@@ -7,12 +7,12 @@ import '../styles/components/CompanyRow.scss';
 
 const CompanyRow = (props) => {
   const {
+    applyLink,
     link,
     logo: logoName,
     logoAlt,
     name,
-    summary,
-    apply_link
+    summary
   } = props;
 
   const [logo, setLogo] = useState(null);
@@ -24,7 +24,7 @@ const CompanyRow = (props) => {
 
   return (
     <tr className="CompanyRow">
-      <td><CompanyName name={ name } link={ link } /></td>
+      <td><CompanyName link={ link } text={ name } /></td>
       <td className="CompanyRow-logo">
         <img className = "CompanyRow-logo-img"
           src={ logo }
@@ -32,18 +32,18 @@ const CompanyRow = (props) => {
         />
       </td>
       <td className="CompanyRow-summary">{ summary }</td>
-      <td><CompanyName name={ name } link={ apply_link } /></td>
+      <td><CompanyName link={ applyLink } text='Careers' /></td>
     </tr>
   );
 };
 
 CompanyRow.propTypes = {
+  applyLink: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
   logo: PropTypes.string.isRequired,
   logoAlt: PropTypes.string,
   name: PropTypes.string.isRequired,
-  summary: PropTypes.string.isRequired,
-  apply_link: PropTypes.string.isRequired,
+  summary: PropTypes.string.isRequired
 
 };
 

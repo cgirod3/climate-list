@@ -12,6 +12,7 @@
 
 .CompanyName:hover {
   color: $colorTextLinkHover;
+  cursor: pointer;
 }
 
 .CompanyName::before {
